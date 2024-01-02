@@ -20,5 +20,6 @@ spec:
         targetRevision: {{ "{{ branch }}" | quote }}
         path: '/'
       destination:
+        cluster: in-cluster
         namespace: {{ "{{ cluster }}" | quote }}
    
