@@ -5,6 +5,7 @@ metadata:
 spec:
   generators:
   - scmProvider:
+      cloneProtocol: https
       github:
         organization: klodnicki-cluster
       filters:
