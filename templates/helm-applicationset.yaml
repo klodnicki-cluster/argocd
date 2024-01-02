@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: helm-applicationset
+spec:
+  generators:
+  - scmProvider:
+      github:
+        organization: klodnicki-cluster
+      filters:
+      - pathsExist:
+        - Chart.yaml
+  template:
+    metadata:
+      name: '{{ repository }}'
+    spec:
+      project: default
+      source:
+        repoURL: '{{ url }}'
+        targetRevision: '{{ branch }}'
+      destination:
+        namespace: '{{ cluster }}'
+   

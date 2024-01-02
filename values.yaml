@@ -1,0 +1,5 @@
+argo-cd:
+  crds:
+    # By default, CRDs are left behind on uninstall.
+    # Uninstall them (deleting everything!) instead.
+    keep: false
