@@ -12,12 +12,12 @@ spec:
         - Chart.yaml
   template:
     metadata:
-      name: '{{ repository }}'
+      name: {{ "{{ repository }}" | quote }}
     spec:
       project: default
       source:
-        repoURL: '{{ url }}'
-        targetRevision: '{{ branch }}'
+        repoURL: {{ "{{ url }}" | quote }}
+        targetRevision: {{ "{{ branch }}" | quote }}
       destination:
-        namespace: '{{ cluster }}'
+        namespace: {{ "{{ cluster }}" | quote }}
    
