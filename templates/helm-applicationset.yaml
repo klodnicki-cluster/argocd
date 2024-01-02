@@ -18,6 +18,7 @@ spec:
       source:
         repoURL: {{ "{{ url }}" | quote }}
         targetRevision: {{ "{{ branch }}" | quote }}
+        path: ''
       destination:
         namespace: {{ "{{ cluster }}" | quote }}
    
