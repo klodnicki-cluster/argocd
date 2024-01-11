@@ -22,5 +22,5 @@ spec:
         path: '.'
       destination:
         name: in-cluster
-        namespace: {{ "{{ cluster }}" | quote }}
+        namespace: {{ "{{ repository }}" | quote }}
    
