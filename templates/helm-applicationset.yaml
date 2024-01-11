@@ -23,4 +23,7 @@ spec:
       destination:
         name: in-cluster
         namespace: {{ "{{ repository }}" | quote }}
-   
+      syncPolicy:
+        automated:
+          prune: true
+          selfHeal: true
