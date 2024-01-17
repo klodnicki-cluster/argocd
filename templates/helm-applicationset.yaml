@@ -8,6 +8,7 @@ spec:
       cloneProtocol: https
       github:
         organization: klodnicki-cluster
+        appSecretName: access-token-github-klodnicki
       filters:
       - pathsExist:
         - Chart.yaml
