@@ -30,3 +30,11 @@ spec:
         automated:
           prune: true
           selfHeal: true
+        syncOptions:
+          - ApplyOutOfSyncOnly=true
+          - CreateNamespace=true
+        managedNamespaceMetadata:
+          annotations:
+            repository.argo.klodnicki.cluster: {{ "{{ repository }}" | quote }}
+            url.argo.klodnicki.cluster: {{ "{{ url }}" | quote }}
+            branch.argo.klodnicki.cluster: {{ "{{ branch }}" | quote }}
