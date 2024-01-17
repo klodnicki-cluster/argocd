@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  labels:
+    argocd.argoproj.io/secret-type: repo-creds
+  name: repos-github-klodnicki
+data:
+  # url: Z2l0QGdpdGh1Yi5jb206a2xvZG5pY2tpCg== # git@github.com:klodnicki
+  url: Z2l0QGdpdGh1Yi5jb206a2xvZG5pY2tpLWNsdXN0ZXI= # git@github.com:klodnicki-cluster
+  sshPrivateKey: '' # Redacted - use install.sh

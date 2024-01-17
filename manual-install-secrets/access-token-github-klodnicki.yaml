@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Secret
+metadata:
+  # This is not a special argo secret type, just a plain one
+  name: access-token-github-klodnicki
+data:
+  # This is a access token for the klodnicki-ci user
+  accessToken: '' # Redacted - use install.sh
+
