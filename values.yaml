@@ -3,3 +3,7 @@ argo-cd:
     # By default, CRDs are left behind on uninstall.
     # Uninstall them (deleting everything!) instead.
     keep: false
+
+  configs:
+    params:
+      server.insecure: true # prevent http->https redirect for ingress that goes to http
