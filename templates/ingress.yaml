@@ -4,7 +4,7 @@ metadata:
   name: argocd
 spec:
   rules:
-    - host: 'argocd.klodnicki.cluster'
+    - host: 'argocd.k8s.klodnicki.cluster'
       http:
         paths:
           - path: /
